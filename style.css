@@ -1,0 +1,111 @@
+/* Styles généraux */
+
+/* Définir un arrière-plan pour le corps de la page */
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+/* Titre */
+
+/* Centrer le titre horizontalement */
+#title {
+  text-align: center;
+  /* Ajouter un fond blanc avec des coins arrondis */
+  background-color: rgb(211, 211, 211);
+  border-radius: 20px;
+  /* Ajouter une bordure pour mettre en évidence le titre */
+  border: 1px solid black;
+  /* Limiter la largeur du titre pour le rendre plus lisible */
+  max-width: 500px;
+  /* Centrer le titre horizontalement sur la page */
+  margin: auto;
+}
+
+/* Titre des définitions */
+
+/* Centrer et souligner le titre des définitions */
+#title_def {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Grille */
+
+/* Définir la mise en page de la grille */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 70px);
+  grid-template-rows: repeat(7, 70px);
+  gap: 0.85px; /* Espacement entre les cellules */
+}
+
+/* Style des cellules de la grille */
+.grid-item,
+.case-noire {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(211, 211, 211);
+  border: 1px solid black; /* Bordure pour séparer les cellules */
+}
+
+/* Cellules noires */
+.case-noire {
+  background-color: black;
+}
+
+/*Mise en forme des définitions*/
+
+/* Style de la boîte de définition */
+.def {
+  background-color: rgb(211, 211, 211);;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+/* Mots sélectionnés */
+
+/* Style des cellules sélectionnées */
+.selected {
+  background-color:  rgb(51, 131, 255);
+}
+
+/* Boutons */
+
+/* Style de base des boutons */
+button {
+  background-color: rgb(211, 211, 211);
+}
+
+/* Changer la couleur du bouton au survol */
+button:hover {
+  background-color:  rgb(51, 131, 255);
+}
+
+/* Numéros de mots */
+
+/* Style des numéros de mots */
+.numero {
+  font-size: 15px; /* Taille de police agrandie */
+  font-weight: bold;
+  padding-right: 15px;
+  vertical-align: top; /* Aligner le texte en haut */
+  line-height: 25px; /* Ajuster la hauteur de ligne pour centrer verticalement */
+}
+
+/* Lettres dans les cellules */
+
+/* Style des lettres dans les cellules */
+.lettre {
+  font-size: 30px; /* Taille de police agrandie */
+  text-align: center;
+  line-height: 40px; /* Ajuster la hauteur de ligne pour centrer verticalement */
+  vertical-align: bottom;
+}
+
+/* Paragraphes */
+
+/* Style des paragraphes */
+p {
+  font-weight: bold;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jeu</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <main>
+
+                <div class = "row">
+                     <h1 id = "title">Jeu de mots croisés</h1>
+
+                     <p> Le jeu implique le remplissage d'une grille où des mots s'entrelacent à la fois horizontalement et verticalement, en utilisant les définitions fournies pour chaque mot.
+                     </p>
+
+                     <p>Lorsque vous cliquez sur une case contenant un numéro, toutes les cases du mot correspondant sont sélectionnées, permettant d'entrer le mot entier. En revanche, un simple clic sur les autres cases (les cases qui ne contiennent pas de numéro sauf les cases noires) sélectionne uniquement la case elle-même, pour y entrer une seule lettre.
+                     </p>
+
+                     <p>Une fois la(les) case(s) sélectionnée(s), cliquez le bouton:
+                        <ul>
+                            <li> "Entrer un mot" pour entrer le mot ou la lettre </li>
+                            <li> "modifier le mot" pour modifier le mot ou la lettre </li>
+                            <li> "Effacer le mot" pour effacer le mot ou la lettre </li>
+                            <li> "verifier les reponses"  pour vérifier les mots entrés une fois que la grille est complète</li>
+                            <li> "Réinitialiser la grille" pour effacer tous les mots de la grille et recommencer le jeu. </li>
+                        </ul>
+                     </p>
+
+                     <p>Une exception concerne le double-clic sur la case numéro 1 : cela sélectionne les cases du mot vertical 1. </p>
+
+                </div><br>
+
+                <!--les définitions-->
+                <div class="row">
+
+                    <div class="col-md-6 def">
+
+                        <h2 id = "title_def"> Définitions </h2>
+
+                        <h3>horizontalement : </h3>
+
+                        <ul id ="mot_horizontal">
+                            <li>1- ni chaud ni froid </li>
+                            <li>5- pronom interrogatif</li>
+                            <li>6- c'est vraiment toi </li>
+                            <li>8- Exclamation </li>
+                            <li>9- pronom interrogatif </li>
+                            <li>11- fureter, errer </li>
+
+                        </ul>
+
+                        <h3>Verticalement : </h3>
+
+                        <ul id ="mot_vertical">
+
+                             <li>1 - pièce pour la construction d'un meuble </li>
+                             <li>2 - prénom suédois d'un roi canonifié </li>
+                             <li>3 - conjonction logique </li>
+                             <li>4 - l'inverse du froid </li>
+                             <li>7 - ce qu'il fallait démontrer </li>
+                             <li>10 - 'Au' sur le tableau </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="grid-container" id = "grille"></div><br>
+
+                        <!-- bouton pour entrer des mots-->
+
+                        <button id="bouton-entrer" ><p>Entrer un mot </p></button>
+
+                        <!--bouton pour modifier des mots-->
+                        <button id="bouton-modifier" ><p>modifier le mot </p></button>
+
+                        <!--bouton pour effacer des mots-->
+                        <button id="bouton-effacer" ><p>Effacer le mot</p></button>
+
+                        <!-- Bouton pour vérifier les réponses -->
+                        <button id="bouton-verifier-reponses" ><p>Vérifier les réponses</p></button><br><br>
+
+                        <!--bouton pour Réinitialiser la grille:  mettre des cases à vide-->
+                        <button id="bouton-reInitialiser" ><p>Réinitialiser la grille</p></button>
+
+                    </div>
+
+
+                </div><br>
+
+
+            </main>
+        </div><br><br>
+
+        <script src = "main.js"></script>
+
+    </body>
+
+</html>
